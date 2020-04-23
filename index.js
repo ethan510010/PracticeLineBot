@@ -16,6 +16,7 @@ bot.on('message', async (event) => {
   }
 })
 
-bot.listen('/linewebhook', 3000, () => {
+
+bot.listen('/linewebhook', process.env.port || 3000, () => {
   console.log('Bot starts');
 })
